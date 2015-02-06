@@ -1,0 +1,20 @@
+﻿<Window x:Class="MyWindowsPositionSettingsReload.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:MyWindowsPositionSettingsReload"
+        local:WindowsSettings.Save="True"        
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="#FFA8A8A8">
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="159*"/>
+    		<RowDefinition Height="160*"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="263*"/>
+    		<ColumnDefinition Width="254*"/>
+    	</Grid.ColumnDefinitions>
+        <Button Content="Close" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" Click="Button_Close_Click" Grid.Column="1" Grid.Row="1" Height="19.96"/>
+        <Label Content="I remember my size and position by myself :-)" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="-232,-12,0,0" VerticalAlignment="Top" Width="464" FontSize="16" FontFamily="Arial Black" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="28.4" Grid.Row="1" Grid.Column="1"/>
+
+    </Grid>
+</Window>
